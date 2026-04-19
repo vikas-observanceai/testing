@@ -158,9 +158,9 @@ a:hover { color: var(--dark-red); }
 #mainNav .navbar-brand { text-decoration: none; }
 
 .brand-icon {
-  font-size: 1.6rem;
-  color: var(--red);
-  line-height: 1;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 .brand-name {
   font-family: var(--font-serif);
@@ -577,7 +577,7 @@ a:hover { color: var(--dark-red); }
   color: rgba(255,255,255,0.75);
   padding: 4rem 0 2rem;
 }
-.footer-brand-icon { font-size: 1.4rem; color: var(--red); }
+.footer-brand-icon { width: 32px; height: 32px; flex-shrink: 0; }
 .footer-brand-name {
   font-family: var(--font-serif);
   font-size: 1.2rem;
