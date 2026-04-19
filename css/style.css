@@ -696,6 +696,7 @@ a:hover { color: var(--dark-red); }
   border-top: 4px solid var(--red);
   transition: transform var(--transition), box-shadow var(--transition);
   height: 100%;
+  text-align: center;
 }
 .volunteer-why-card:hover {
   transform: translateY(-4px);
