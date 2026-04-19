@@ -84,7 +84,7 @@
         <li class="nav-item"><a class="nav-link" href="#recognitions">Recognitions</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary-red" href="#volunteer">Volunteer</a>
+          <a class="btn btn-primary-red" href="volunteer.html">Volunteer</a>
         </li>
       </ul>
     </div>
@@ -99,7 +99,7 @@
     <h1 class="hero-title">Elect Manisha Varma</h1>
     <p class="hero-tagline">A Stronger Voice for Lincoln, NB</p>
     <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
-      <a href="#volunteer" class="btn btn-primary-red btn-lg">
+      <a href="volunteer.html" class="btn btn-primary-red btn-lg">
         <i class="fa-solid fa-hand-holding-heart me-2"></i>Volunteer
       </a>
       <a href="#about" class="btn btn-outline-white btn-lg">
@@ -168,7 +168,7 @@
         </p>
         <div class="d-flex flex-wrap gap-3 mt-4">
           <a href="#platform" class="btn btn-primary-red">View Her Platform</a>
-          <a href="#volunteer" class="btn btn-outline-red">Get Involved</a>
+          <a href="volunteer.html" class="btn btn-outline-red">Get Involved</a>
         </div>
       </div>
     </div>
@@ -424,90 +424,43 @@
   </div>
 </section>
 
-<!-- ===================== VOLUNTEER FORM ===================== -->
+<!-- ===================== VOLUNTEER CTA ===================== -->
 <section id="volunteer" class="section-pad bg-white">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="text-center mb-5">
-          <p class="section-eyebrow">Get Involved</p>
-          <h2 class="section-title">Volunteer Registration</h2>
-          <p class="section-subtitle">Join the team and help build a better Lincoln together.</p>
+  <div class="container text-center">
+    <p class="section-eyebrow">Get Involved</p>
+    <h2 class="section-title">Volunteer With the Campaign</h2>
+    <p class="section-subtitle mx-auto" style="max-width:600px;">
+      Whether you can canvass, make calls, help at events, or post on social media — every effort counts. Join the team today.
+    </p>
+    <div class="row g-4 justify-content-center my-4">
+      <div class="col-6 col-md-3">
+        <div class="volunteer-why-card">
+          <div class="platform-icon"><i class="fa-solid fa-person-walking"></i></div>
+          <h5>Canvassing</h5>
         </div>
-        <!-- Replace your@email.com with the campaign's real email address -->
-        <form action="https://formsubmit.co/your@email.com" method="POST" class="form-card" id="volunteerForm">
-          <input type="hidden" name="_subject" value="New Volunteer — Manisha Varma Campaign" />
-          <input type="hidden" name="_captcha" value="true" />
-          <input type="hidden" name="_next" value="https://electmanishavarma.ca/?volunteer=thankyou#volunteer" />
-          <input type="text" name="_honey" style="display:none" />
-
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="vol-fname" class="form-label">First Name <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="vol-fname" name="first_name" required placeholder="Jane" />
-            </div>
-            <div class="col-md-6">
-              <label for="vol-lname" class="form-label">Last Name <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="vol-lname" name="last_name" required placeholder="Smith" />
-            </div>
-            <div class="col-md-6">
-              <label for="vol-email" class="form-label">Email Address <span class="text-danger">*</span></label>
-              <input type="email" class="form-control" id="vol-email" name="email" required placeholder="jane@example.com" />
-            </div>
-            <div class="col-md-6">
-              <label for="vol-phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="vol-phone" name="phone" placeholder="(506) 555-0100" />
-            </div>
-            <div class="col-12">
-              <label for="vol-ward" class="form-label">Neighbourhood / Ward</label>
-              <input type="text" class="form-control" id="vol-ward" name="neighbourhood" placeholder="e.g. Lincoln West, Geary, etc." />
-            </div>
-            <div class="col-12">
-              <label class="form-label">How would you like to help? <span class="text-danger">*</span></label>
-              <div class="row g-2">
-                <div class="col-6 col-md-3">
-                  <div class="form-check form-check-card">
-                    <input class="form-check-input" type="checkbox" name="help[]" value="Canvassing" id="help-canvass" />
-                    <label class="form-check-label" for="help-canvass">
-                      <i class="fa-solid fa-person-walking me-1"></i>Canvassing
-                    </label>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="form-check form-check-card">
-                    <input class="form-check-input" type="checkbox" name="help[]" value="Phone Banking" id="help-phone" />
-                    <label class="form-check-label" for="help-phone">
-                      <i class="fa-solid fa-phone me-1"></i>Phone Banking
-                    </label>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="form-check form-check-card">
-                    <input class="form-check-input" type="checkbox" name="help[]" value="Events" id="help-events" />
-                    <label class="form-check-label" for="help-events">
-                      <i class="fa-solid fa-calendar me-1"></i>Events
-                    </label>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="form-check form-check-card">
-                    <input class="form-check-input" type="checkbox" name="help[]" value="Social Media" id="help-social" />
-                    <label class="form-check-label" for="help-social">
-                      <i class="fa-brands fa-instagram me-1"></i>Social Media
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 text-center mt-2">
-              <button type="submit" class="btn btn-primary-red btn-lg px-5">
-                <i class="fa-solid fa-paper-plane me-2"></i>Sign Up to Volunteer
-              </button>
-            </div>
-          </div>
-        </form>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="volunteer-why-card">
+          <div class="platform-icon"><i class="fa-solid fa-phone"></i></div>
+          <h5>Phone Banking</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="volunteer-why-card">
+          <div class="platform-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h5>Events</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="volunteer-why-card">
+          <div class="platform-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h5>Social Media</h5>
+        </div>
       </div>
     </div>
+    <a href="volunteer.html" class="btn btn-primary-red btn-lg px-5">
+      <i class="fa-solid fa-hand-holding-heart me-2"></i>Sign Up to Volunteer
+    </a>
   </div>
 </section>
 
@@ -648,7 +601,7 @@
       <div class="col-6 col-lg-2">
         <h5 class="footer-heading">Get Involved</h5>
         <ul class="footer-links">
-          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
           <li><a href="#donate">Donate</a></li>
           <li><a href="#newsletter">Newsletter</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -658,7 +611,7 @@
         <h5 class="footer-heading">Election Day</h5>
         <p class="footer-election-date">May 11, 2026</p>
         <p class="footer-vote-info small">Make your voice heard — vote Manisha Varma in Lincoln, NB.</p>
-        <a href="#volunteer" class="btn btn-primary-red btn-sm mt-2">Join the Campaign</a>
+        <a href="volunteer.html" class="btn btn-primary-red btn-sm mt-2">Join the Campaign</a>
       </div>
     </div>
     <hr class="footer-divider" />

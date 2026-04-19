@@ -678,3 +678,34 @@ a:hover { color: var(--dark-red); }
   .countdown-unit { min-width: 44px; }
   .countdown-number { font-size: 1.8rem; }
 }
+
+/* ---- Volunteer page hero ---- */
+.page-hero {
+  padding: 140px 0 80px;
+  background: linear-gradient(160deg, var(--dark-red) 0%, var(--red) 100%);
+}
+.page-hero .hero-title { font-size: clamp(2rem, 6vw, 3.5rem); }
+.page-hero .hero-tagline { font-size: 1.1rem; }
+
+/* ---- Volunteer why cards ---- */
+.volunteer-why-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--red);
+  transition: transform var(--transition), box-shadow var(--transition);
+  height: 100%;
+}
+.volunteer-why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.volunteer-why-card .platform-icon { margin: 0 auto 1rem; }
+.volunteer-why-card h4,
+.volunteer-why-card h5 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
