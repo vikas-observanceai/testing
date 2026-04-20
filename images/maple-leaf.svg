@@ -1,18 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" fill="#C8102E">
-  <!-- Stem -->
-  <rect x="46" y="80" width="8" height="26" rx="3"/>
-  <!-- Leaf body: 7-lobed maple leaf shape -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" fill="#FF0000">
+  <!-- 11-point Canadian flag maple leaf -->
   <path d="
-    M 50,78
-    L 30,84  L 34,66
-    L 10,70  L 22,52
-    L 4,42   L 22,40
-    L 12,20  L 34,30
-    L 28,6   L 50,20
-    L 72,6   L 66,30
-    L 88,20  L 78,40
-    L 96,42  L 78,52
-    L 90,70  L 66,66
-    L 70,84  Z
+    M 50,12
+    L 56,21  L 70,18
+    L 72,31  L 86,27
+    L 80,44  L 95,50
+    L 80,53  L 85,67
+    L 70,64  L 74,78
+    L 62,75  L 52,82
+    L 52,112 L 48,112
+    L 48,82  L 38,75
+    L 26,78  L 30,64
+    L 15,67  L 20,53
+    L 5,50   L 20,44
+    L 14,27  L 28,31
+    L 30,18  L 44,21
+    Z
   "/>
 </svg>

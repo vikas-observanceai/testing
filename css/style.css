@@ -6,8 +6,8 @@
 
 /* ---- Variables ---- */
 :root {
-  --red:        #C8102E;
-  --dark-red:   #8B0000;
+  --red:        #FF0000;
+  --dark-red:   #CC0000;
   --white:      #FFFFFF;
   --off-white:  #F5F5F5;
   --dark:       #1a1a2e;
@@ -100,7 +100,7 @@ a:hover { color: var(--dark-red); }
   border-color: var(--dark-red);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(200,16,46,0.35);
+  box-shadow: 0 6px 20px rgba(255,0,0,0.35);
 }
 
 .btn-outline-red {
@@ -356,7 +356,7 @@ a:hover { color: var(--dark-red); }
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(200,16,46,0.1);
+  background: rgba(255,0,0,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,7 +398,7 @@ a:hover { color: var(--dark-red); }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(200,16,46,0.55);
+  background: rgba(255,0,0,0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -485,7 +485,7 @@ a:hover { color: var(--dark-red); }
 }
 .form-control:focus {
   border-color: var(--red);
-  box-shadow: 0 0 0 3px rgba(200,16,46,0.15);
+  box-shadow: 0 0 0 3px rgba(255,0,0,0.15);
   outline: none;
 }
 .form-label {
@@ -514,7 +514,7 @@ a:hover { color: var(--dark-red); }
 }
 .form-check-card:has(.form-check-input:checked) {
   border-color: var(--red);
-  background: rgba(200,16,46,0.05);
+  background: rgba(255,0,0,0.05);
 }
 
 /* ---- Newsletter ---- */
@@ -646,7 +646,7 @@ a:hover { color: var(--dark-red); }
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  box-shadow: 0 4px 16px rgba(200,16,46,0.4);
+  box-shadow: 0 4px 16px rgba(255,0,0,0.4);
   opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
