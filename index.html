@@ -64,6 +64,25 @@
 </head>
 <body>
 
+<!-- ===================== TOP BANNER ===================== -->
+<div class="top-banner" id="topBanner" aria-label="Election day countdown">
+  <div class="container d-flex align-items-center justify-content-center gap-3">
+    <span class="top-banner-label">
+      <img src="images/maple-leaf.svg" alt="" />
+      Election Day · May 11, 2026
+    </span>
+    <div class="top-banner-countdown">
+      <span class="tbc-block"><span class="tbc-num" id="cd-days">00</span><span class="tbc-unit">d</span></span>
+      <span class="tbc-sep">:</span>
+      <span class="tbc-block"><span class="tbc-num" id="cd-hours">00</span><span class="tbc-unit">h</span></span>
+      <span class="tbc-sep">:</span>
+      <span class="tbc-block"><span class="tbc-num" id="cd-minutes">00</span><span class="tbc-unit">m</span></span>
+      <span class="tbc-sep">:</span>
+      <span class="tbc-block"><span class="tbc-num" id="cd-seconds">00</span><span class="tbc-unit">s</span></span>
+    </div>
+  </div>
+</div>
+
 <!-- ===================== NAVBAR ===================== -->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
   <div class="container">
@@ -117,31 +136,6 @@
       <i class="fa-solid fa-arrow-right"></i>
     </a>
 
-    <!-- Countdown Timer -->
-    <div class="countdown-wrapper mt-5">
-      <p class="countdown-label">Election Day Countdown</p>
-      <div class="countdown-grid" id="countdown" aria-live="polite" aria-label="Election countdown timer">
-        <div class="countdown-unit">
-          <span class="countdown-number" id="cd-days">00</span>
-          <span class="countdown-text">Days</span>
-        </div>
-        <div class="countdown-sep">:</div>
-        <div class="countdown-unit">
-          <span class="countdown-number" id="cd-hours">00</span>
-          <span class="countdown-text">Hours</span>
-        </div>
-        <div class="countdown-sep">:</div>
-        <div class="countdown-unit">
-          <span class="countdown-number" id="cd-minutes">00</span>
-          <span class="countdown-text">Minutes</span>
-        </div>
-        <div class="countdown-sep">:</div>
-        <div class="countdown-unit">
-          <span class="countdown-number" id="cd-seconds">00</span>
-          <span class="countdown-text">Seconds</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Scroll indicator -->

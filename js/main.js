@@ -32,8 +32,9 @@
       const target = document.querySelector(this.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      const navHeight = nav ? nav.offsetHeight : 0;
-      const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8;
+      const banner = document.getElementById('topBanner');
+      const offset = (nav ? nav.offsetHeight : 0) + (banner ? banner.offsetHeight : 0) + 8;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({ top: top, behavior: 'smooth' });
     });
   });

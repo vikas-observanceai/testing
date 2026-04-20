@@ -6,6 +6,7 @@
 
 /* ---- Variables ---- */
 :root {
+  --banner-h: 42px;
   --red:        #FF0000;
   --dark-red:   #CC0000;
   --white:      #FFFFFF;
@@ -144,10 +145,70 @@ a:hover { color: var(--dark-red); }
 }
 .btn-white:hover { background-color: var(--off-white); color: var(--dark-red); transform: translateY(-2px); }
 
+/* ---- Top countdown banner ---- */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--banner-h);
+  background: var(--dark);
+  z-index: 1032;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+}
+.top-banner-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.top-banner-label img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(0.5);
+}
+.top-banner-countdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.tbc-block { display: inline-flex; align-items: baseline; gap: 1px; }
+.tbc-num {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  min-width: 1.6ch;
+  text-align: center;
+}
+.tbc-unit {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tbc-sep {
+  color: rgba(255,255,255,0.3);
+  font-weight: 700;
+  padding: 0 2px;
+}
+@media (max-width: 480px) {
+  .top-banner-label { display: none; }
+}
+
 /* ---- Navbar ---- */
 #mainNav {
   background: transparent;
   padding: 1rem 0;
+  top: var(--banner-h);
   transition: background-color var(--transition), box-shadow var(--transition), padding var(--transition);
 }
 #mainNav.scrolled {
@@ -205,6 +266,7 @@ a:hover { color: var(--dark-red); }
 /* ---- Hero ---- */
 .hero-section {
   min-height: 100vh;
+  padding-top: var(--banner-h);
   position: relative;
   background:
     linear-gradient(160deg, rgba(139,0,0,0.92) 0%, rgba(200,16,46,0.88) 50%, rgba(26,26,46,0.95) 100%),
@@ -814,7 +876,7 @@ a:hover { color: var(--dark-red); }
 
 /* ---- Volunteer page hero ---- */
 .page-hero {
-  padding: 140px 0 80px;
+  padding: calc(140px + var(--banner-h)) 0 80px;
   background: linear-gradient(160deg, var(--dark-red) 0%, var(--red) 100%);
 }
 .page-hero .hero-title { font-size: clamp(2rem, 6vw, 3.5rem); }
