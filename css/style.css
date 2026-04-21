@@ -811,6 +811,56 @@ a:hover { color: var(--dark-red); }
   flex-shrink: 0;
 }
 
+/* ---- Vote badge (hero) ---- */
+.vote-badge {
+  background: var(--red);
+  border-radius: var(--radius-lg);
+  padding: 0.85rem 1.25rem;
+  color: #fff;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(255,0,0,0.35);
+  animation: vote-pulse 2s ease-in-out infinite;
+}
+.vote-badge:hover {
+  color: #fff;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(255,0,0,0.5);
+}
+@keyframes vote-pulse {
+  0%, 100% { box-shadow: 0 8px 32px rgba(255,0,0,0.35); transform: translateY(0); }
+  50%       { box-shadow: 0 12px 40px rgba(255,0,0,0.6); transform: translateY(-4px); }
+}
+.vote-badge-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+.vote-badge-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.vote-badge .vote-badge-text {
+  line-height: 1.35;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.vote-badge .event-badge-date {
+  color: rgba(255,255,255,0.8);
+}
+.vote-badge .fa-arrow-right {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.hero-badges { flex-wrap: wrap; }
+
 /* ---- Events page cards ---- */
 .event-card {
   background: var(--white);
