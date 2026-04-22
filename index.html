@@ -69,7 +69,7 @@
   <div class="container d-flex align-items-center justify-content-center gap-3">
     <span class="top-banner-label">
       <img src="images/maple-leaf.svg" alt="" />
-      Election Day · May 11, 2026
+      <span data-i18n="banner-label">Election Day · May 11, 2026</span>
     </span>
     <div class="top-banner-countdown">
       <span class="tbc-block"><span class="tbc-num" id="cd-days">00</span><span class="tbc-unit">d</span></span>
@@ -96,14 +96,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#videos">Videos</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="voting.html">Vote</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav-about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#platform" data-i18n="nav-platform">Platform</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery" data-i18n="nav-gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#videos" data-i18n="nav-videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html" data-i18n="nav-events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="voting.html" data-i18n="nav-vote">Vote</a></li>
         <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary-red" href="#contact">Contact Us</a>
+          <a class="btn btn-primary-red" href="#contact" data-i18n="nav-contact">Contact Us</a>
+        </li>
+        <!-- Language switcher -->
+        <li class="nav-item ms-lg-2">
+          <div class="lang-switcher" role="group" aria-label="Language / Langue">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-divider" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
         </li>
       </ul>
     </div>
@@ -114,15 +122,15 @@
 <section id="hero" class="hero-section d-flex flex-column justify-content-center">
   <div class="hero-overlay"></div>
   <div class="container position-relative z-1 text-white text-center py-5">
-    <p class="hero-eyebrow">Fredericton City Council · Ward 7 – Southwood Park &amp; Lincoln · May 2026</p>
-    <h1 class="hero-title">Elect Manisha Varma</h1>
-    <p class="hero-tagline">Dedicated &nbsp;·&nbsp; Inclusive &nbsp;·&nbsp; Trusted</p>
+    <p class="hero-eyebrow" data-i18n="hero-eyebrow">Fredericton City Council · Ward 7 – Southwood Park &amp; Lincoln · May 2026</p>
+    <h1 class="hero-title" data-i18n="hero-title">Elect Manisha Varma</h1>
+    <p class="hero-tagline" data-i18n="hero-tagline">Dedicated &nbsp;·&nbsp; Inclusive &nbsp;·&nbsp; Trusted</p>
     <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
       <a href="#contact" class="btn btn-primary-red btn-lg">
-        <i class="fa-solid fa-envelope me-2"></i>Contact Us
+        <i class="fa-solid fa-envelope me-2"></i><span data-i18n="hero-cta-contact">Contact Us</span>
       </a>
       <a href="#about" class="btn btn-outline-white btn-lg">
-        <i class="fa-solid fa-circle-info me-2"></i>Learn More
+        <i class="fa-solid fa-circle-info me-2"></i><span data-i18n="hero-cta-learn">Learn More</span>
       </a>
     </div>
 
@@ -133,9 +141,9 @@
       <a href="voting.html" class="vote-badge d-inline-flex align-items-center gap-3 text-decoration-none">
         <span class="vote-badge-icon"><i class="fa-solid fa-check-to-slot"></i></span>
         <span class="event-badge-inner">
-          <span class="vote-badge-tag">&#x26A0; Voting is Open Now</span>
-          <span class="vote-badge-text event-badge-text">Advance Polling · May 2 &amp; May 4</span>
-          <span class="event-badge-date"><i class="fa-solid fa-location-dot me-1"></i>655 rue Priestman St, Fredericton</span>
+          <span class="vote-badge-tag" data-i18n="vote-badge-tag">&#x26A0; Voting is Open Now</span>
+          <span class="vote-badge-text event-badge-text" data-i18n="vote-badge-text">Advance Polling · May 2 &amp; May 4</span>
+          <span class="event-badge-date"><i class="fa-solid fa-location-dot me-1"></i><span data-i18n="vote-badge-addr">655 rue Priestman St, Fredericton</span></span>
         </span>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
@@ -144,9 +152,9 @@
       <a href="events.html" class="event-badge d-inline-flex align-items-center gap-3 text-decoration-none">
         <span class="event-badge-dot"></span>
         <span class="event-badge-inner">
-          <span class="event-badge-tag">&#x2605; Upcoming Event</span>
-          <span class="event-badge-text">Meet Your Candidate &amp; Share Your Priorities</span>
-          <span class="event-badge-date"><i class="fa-solid fa-calendar-day me-1"></i>Sunday, April 26 &nbsp;·&nbsp; 4–6 PM &nbsp;·&nbsp; Lincoln Heights Park</span>
+          <span class="event-badge-tag" data-i18n="event-badge-tag">&#x2605; Upcoming Event</span>
+          <span class="event-badge-text" data-i18n="event-badge-text">Meet Your Candidate &amp; Share Your Priorities</span>
+          <span class="event-badge-date"><i class="fa-solid fa-calendar-day me-1"></i><span data-i18n="event-badge-date">Sunday, April 26 &nbsp;·&nbsp; 4–6 PM &nbsp;·&nbsp; Lincoln Heights Park</span></span>
         </span>
         <i class="fa-solid fa-arrow-right"></i>
       </a>
@@ -176,20 +184,20 @@
         </div>
       </div>
       <div class="col-lg-7">
-        <p class="section-eyebrow">About the Candidate</p>
-        <h2 class="section-title">Meet Manisha Varma</h2>
-        <p class="lead-text">
+        <p class="section-eyebrow" data-i18n="about-eyebrow">About the Candidate</p>
+        <h2 class="section-title" data-i18n="about-title">Meet Manisha Varma</h2>
+        <p class="lead-text" data-i18n="about-lead">
           Manisha Varma is a dedicated community leader running for Fredericton City Council in Ward 7 – Southwood Park &amp; Lincoln. A passionate advocate for inclusivity and community wellbeing, she has spent years building bridges across Fredericton's diverse neighbourhoods.
         </p>
-        <p>
+        <p data-i18n="about-p2">
           As a longtime resident of Ward 7, Manisha understands the real challenges facing families in Southwood Park &amp; Lincoln — from housing affordability to accessible services for youth and seniors. She believes every resident deserves a seat at the table.
         </p>
-        <p>
+        <p data-i18n="about-p3">
           Recognized by the City of Fredericton for her community contributions, Manisha brings lived experience, genuine empathy, and a commitment to inclusive leadership to everything she does.
         </p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="#platform" class="btn btn-primary-red">View Her Platform</a>
-          <a href="#contact" class="btn btn-outline-red">Get Involved</a>
+          <a href="#platform" class="btn btn-primary-red" data-i18n="about-btn-platform">View Her Platform</a>
+          <a href="#contact" class="btn btn-outline-red" data-i18n="about-btn-contact">Get Involved</a>
         </div>
       </div>
     </div>
@@ -200,44 +208,44 @@
 <section id="platform" class="section-pad bg-offwhite">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-eyebrow">Election Platform</p>
-      <h2 class="section-title">Manisha's Platform for Ward 7</h2>
-      <p class="section-subtitle">Five priorities. One community. Real results for Southwood Park &amp; Lincoln.</p>
+      <p class="section-eyebrow" data-i18n="platform-eyebrow">Election Platform</p>
+      <h2 class="section-title" data-i18n="platform-title">Manisha's Platform for Ward 7</h2>
+      <p class="section-subtitle" data-i18n="platform-subtitle">Five priorities. One community. Real results for Southwood Park &amp; Lincoln.</p>
     </div>
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-4">
         <div class="platform-card h-100">
           <div class="platform-icon"><i class="fa-solid fa-route"></i></div>
-          <h3 class="platform-card-title">Expand the Trail</h3>
-          <p>Connecting our neighbourhoods and keeping green space accessible.</p>
+          <h3 class="platform-card-title" data-i18n="platform-1-title">Expand the Trail</h3>
+          <p data-i18n="platform-1-body">Connecting our neighbourhoods and keeping green space accessible.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="platform-card h-100">
           <div class="platform-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-          <h3 class="platform-card-title">Property Taxes &amp; City Spending</h3>
-          <p>Making sure tax hikes come with clear results.</p>
+          <h3 class="platform-card-title" data-i18n="platform-2-title">Property Taxes &amp; City Spending</h3>
+          <p data-i18n="platform-2-body">Making sure tax hikes come with clear results.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="platform-card h-100">
           <div class="platform-icon"><i class="fa-solid fa-traffic-light"></i></div>
-          <h3 class="platform-card-title">Traffic Safety</h3>
-          <p>Speeding, traffic lights, and safer crossings for kids and seniors.</p>
+          <h3 class="platform-card-title" data-i18n="platform-3-title">Traffic Safety</h3>
+          <p data-i18n="platform-3-body">Speeding, traffic lights, and safer crossings for kids and seniors.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="platform-card h-100">
           <div class="platform-icon"><i class="fa-solid fa-city"></i></div>
-          <h3 class="platform-card-title">City Services</h3>
-          <p>Roads, sidewalks, snow clearing, and downtown safety.</p>
+          <h3 class="platform-card-title" data-i18n="platform-4-title">City Services</h3>
+          <p data-i18n="platform-4-body">Roads, sidewalks, snow clearing, and downtown safety.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="platform-card h-100">
           <div class="platform-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <h3 class="platform-card-title">Rehabilitation Centre &amp; Addiction Support</h3>
-          <p>Access to treatment, mental health services, and community impact.</p>
+          <h3 class="platform-card-title" data-i18n="platform-5-title">Rehabilitation Centre &amp; Addiction Support</h3>
+          <p data-i18n="platform-5-body">Access to treatment, mental health services, and community impact.</p>
         </div>
       </div>
     </div>
@@ -248,9 +256,9 @@
 <section id="gallery" class="section-pad bg-white">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-eyebrow">Photo Gallery</p>
-      <h2 class="section-title">Manisha in the Community</h2>
-      <p class="section-subtitle">On the ground, with the people, every step of the way.</p>
+      <p class="section-eyebrow" data-i18n="gallery-eyebrow">Photo Gallery</p>
+      <h2 class="section-title" data-i18n="gallery-title">Manisha in the Community</h2>
+      <p class="section-subtitle" data-i18n="gallery-subtitle">On the ground, with the people, every step of the way.</p>
     </div>
     <div class="row g-3" id="galleryGrid">
       <div class="col-6 col-md-4 col-lg-3">
@@ -297,9 +305,9 @@
 <section id="videos" class="section-pad bg-dark-red text-white">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-eyebrow text-white opacity-75">Campaign Videos</p>
-      <h2 class="section-title text-white">Hear From Manisha</h2>
-      <p class="section-subtitle text-white opacity-80">Watch campaign messages, community conversations, and platform highlights.</p>
+      <p class="section-eyebrow text-white opacity-75" data-i18n="videos-eyebrow">Campaign Videos</p>
+      <h2 class="section-title text-white" data-i18n="videos-title">Hear From Manisha</h2>
+      <p class="section-subtitle text-white opacity-80" data-i18n="videos-subtitle">Watch campaign messages, community conversations, and platform highlights.</p>
     </div>
     <div class="row g-4 justify-content-center">
       <!-- Replace VIDEO_ID_1, VIDEO_ID_2, VIDEO_ID_3 with real YouTube video IDs -->
@@ -314,7 +322,7 @@
               loading="lazy"
             ></iframe>
           </div>
-          <p class="video-caption mt-3">Campaign Introduction</p>
+          <p class="video-caption mt-3" data-i18n="video-cap-1">Campaign Introduction</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
@@ -328,7 +336,7 @@
               loading="lazy"
             ></iframe>
           </div>
-          <p class="video-caption mt-3">Community Priorities</p>
+          <p class="video-caption mt-3" data-i18n="video-cap-2">Community Priorities</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
@@ -342,7 +350,7 @@
               loading="lazy"
             ></iframe>
           </div>
-          <p class="video-caption mt-3">Town Hall Highlights</p>
+          <p class="video-caption mt-3" data-i18n="video-cap-3">Town Hall Highlights</p>
         </div>
       </div>
     </div>
@@ -353,33 +361,33 @@
 <section id="recognitions" class="section-pad bg-offwhite">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-eyebrow">Endorsements & Awards</p>
-      <h2 class="section-title">Recognitions</h2>
-      <p class="section-subtitle">Trusted by community leaders and recognized for her service.</p>
+      <p class="section-eyebrow" data-i18n="recog-eyebrow">Endorsements &amp; Awards</p>
+      <h2 class="section-title" data-i18n="recog-title">Recognitions</h2>
+      <p class="section-subtitle" data-i18n="recog-subtitle">Trusted by community leaders and recognized for her service.</p>
     </div>
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-4">
         <div class="recognition-card h-100">
           <div class="recognition-icon"><i class="fa-solid fa-award"></i></div>
-          <h4 class="recognition-title">Community Recognition Award</h4>
-          <p class="recognition-org">City of Fredericton</p>
-          <p class="recognition-quote">Awarded by the City of Fredericton in recognition of outstanding dedication to the community through the Association of Indo-Canadians Fredericton.</p>
+          <h4 class="recognition-title" data-i18n="recog-1-title">Community Recognition Award</h4>
+          <p class="recognition-org" data-i18n="recog-1-org">City of Fredericton</p>
+          <p class="recognition-quote" data-i18n="recog-1-quote">Awarded by the City of Fredericton in recognition of outstanding dedication to the community through the Association of Indo-Canadians Fredericton.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="recognition-card h-100">
           <div class="recognition-icon"><i class="fa-solid fa-people-group"></i></div>
-          <h4 class="recognition-title">Board Member — MCAF</h4>
-          <p class="recognition-org">Multicultural Association of Fredericton</p>
-          <p class="recognition-quote">Proud member of the MCAF leadership, helping celebrate 50 years of multiculturalism and community building in Fredericton.</p>
+          <h4 class="recognition-title" data-i18n="recog-2-title">Board Member — MCAF</h4>
+          <p class="recognition-org" data-i18n="recog-2-org">Multicultural Association of Fredericton</p>
+          <p class="recognition-quote" data-i18n="recog-2-quote">Proud member of the MCAF leadership, helping celebrate 50 years of multiculturalism and community building in Fredericton.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="recognition-card h-100">
           <div class="recognition-icon"><i class="fa-solid fa-landmark"></i></div>
-          <h4 class="recognition-title">Guest at Government House</h4>
-          <p class="recognition-org">Province of New Brunswick</p>
-          <p class="recognition-quote">Invited to Government House, Fredericton, in recognition of her contributions to the cultural and civic life of New Brunswick.</p>
+          <h4 class="recognition-title" data-i18n="recog-3-title">Guest at Government House</h4>
+          <p class="recognition-org" data-i18n="recog-3-org">Province of New Brunswick</p>
+          <p class="recognition-quote" data-i18n="recog-3-quote">Invited to Government House, Fredericton, in recognition of her contributions to the cultural and civic life of New Brunswick.</p>
         </div>
       </div>
     </div>
@@ -393,8 +401,8 @@
   <div class="container">
     <div class="row justify-content-center align-items-center g-4">
       <div class="col-lg-5 text-center text-lg-start">
-        <h3 class="newsletter-title">Stay in the Loop</h3>
-        <p class="newsletter-sub mb-0">Get campaign updates, event invites, and news delivered to your inbox.</p>
+        <h3 class="newsletter-title" data-i18n="newsletter-title">Stay in the Loop</h3>
+        <p class="newsletter-sub mb-0" data-i18n="newsletter-sub">Get campaign updates, event invites, and news delivered to your inbox.</p>
       </div>
       <div class="col-lg-6">
         <!-- Replace your@email.com with the campaign's real email address -->
@@ -402,9 +410,9 @@
           <input type="hidden" name="_subject" value="Newsletter Sign-up — Manisha Varma Campaign" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style="display:none" />
-          <input type="text" name="name" class="form-control" placeholder="Your name" required />
-          <input type="email" name="email" class="form-control" placeholder="Your email address" required />
-          <button type="submit" class="btn btn-primary-red text-nowrap">Subscribe</button>
+          <input type="text" name="name" class="form-control" placeholder="Your name" data-i18n-ph="newsletter-name" required />
+          <input type="email" name="email" class="form-control" placeholder="Your email address" data-i18n-ph="newsletter-email" required />
+          <button type="submit" class="btn btn-primary-red text-nowrap" data-i18n="newsletter-btn">Subscribe</button>
         </form>
       </div>
     </div>
@@ -415,9 +423,9 @@
 <section id="contact" class="section-pad bg-white">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-eyebrow">Get in Touch</p>
-      <h2 class="section-title">Contact the Campaign</h2>
-      <p class="section-subtitle">Have a question or want to share your thoughts? We'd love to hear from you.</p>
+      <p class="section-eyebrow" data-i18n="contact-eyebrow">Get in Touch</p>
+      <h2 class="section-title" data-i18n="contact-title">Contact the Campaign</h2>
+      <p class="section-subtitle" data-i18n="contact-subtitle">Have a question or want to share your thoughts? We'd love to hear from you.</p>
     </div>
     <div class="row g-5 align-items-start">
       <div class="col-lg-6">
@@ -429,24 +437,24 @@
 
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="c-name" class="form-label">Your Name <span class="text-danger">*</span></label>
+              <label for="c-name" class="form-label"><span data-i18n="contact-label-name">Your Name</span> <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="c-name" name="name" required placeholder="Jane Smith" />
             </div>
             <div class="col-md-6">
-              <label for="c-email" class="form-label">Email Address <span class="text-danger">*</span></label>
+              <label for="c-email" class="form-label"><span data-i18n="contact-label-email">Email Address</span> <span class="text-danger">*</span></label>
               <input type="email" class="form-control" id="c-email" name="email" required placeholder="jane@example.com" />
             </div>
             <div class="col-12">
-              <label for="c-subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="c-subject" name="subject" placeholder="What's on your mind?" />
+              <label for="c-subject" class="form-label" data-i18n="contact-label-subject">Subject</label>
+              <input type="text" class="form-control" id="c-subject" name="subject" placeholder="What's on your mind?" data-i18n-ph="contact-ph-subject" />
             </div>
             <div class="col-12">
-              <label for="c-message" class="form-label">Message <span class="text-danger">*</span></label>
-              <textarea class="form-control" id="c-message" name="message" rows="5" required placeholder="Share your thoughts, questions, or concerns..."></textarea>
+              <label for="c-message" class="form-label"><span data-i18n="contact-label-msg">Message</span> <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="c-message" name="message" rows="5" required placeholder="Share your thoughts, questions, or concerns..." data-i18n-ph="contact-ph-msg"></textarea>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary-red">
-                <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                <i class="fa-solid fa-paper-plane me-2"></i><span data-i18n="contact-btn-send">Send Message</span>
               </button>
             </div>
           </div>
@@ -458,20 +466,20 @@
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <strong>(506) 478-4794</strong>
-              <p class="mb-0 text-muted">Ward 7 – Southwood Park &amp; Lincoln, Fredericton, NB</p>
+              <p class="mb-0 text-muted" data-i18n="contact-ward">Ward 7 – Southwood Park &amp; Lincoln, Fredericton, NB</p>
             </div>
           </div>
           <div class="contact-info-item">
             <i class="fa-solid fa-envelope"></i>
             <div>
-              <strong>Email</strong>
+              <strong data-i18n="contact-email-lbl">Email</strong>
               <p class="mb-0"><a href="mailto:vmanisha86@gmail.com">vmanisha86@gmail.com</a></p>
             </div>
           </div>
           <div class="contact-info-item">
             <i class="fa-brands fa-facebook-f"></i>
             <div>
-              <strong>Social Media</strong>
+              <strong data-i18n="contact-social-lbl">Social Media</strong>
               <div class="social-links-inline mt-1">
                 <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" aria-label="Twitter/X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
@@ -504,7 +512,7 @@
           <img src="images/maple-leaf.svg" alt="" class="footer-brand-icon" aria-hidden="true" />
           <span class="footer-brand-name">Manisha Varma</span>
         </div>
-        <p class="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
+        <p class="footer-tagline" data-i18n="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
         <div class="footer-social mt-3">
           <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter/X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
@@ -513,38 +521,37 @@
         </div>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1">
-        <h5 class="footer-heading">Quick Links</h5>
+        <h5 class="footer-heading" data-i18n="footer-quick-links">Quick Links</h5>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#platform">Platform</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="voting.html">Voting Info</a></li>
-          <li><a href="#recognitions">Recognitions</a></li>
+          <li><a href="#about" data-i18n="footer-about">About</a></li>
+          <li><a href="#platform" data-i18n="footer-platform">Platform</a></li>
+          <li><a href="#gallery" data-i18n="footer-gallery">Gallery</a></li>
+          <li><a href="events.html" data-i18n="footer-events">Events</a></li>
+          <li><a href="voting.html" data-i18n="footer-voting">Voting Info</a></li>
+          <li><a href="#recognitions" data-i18n="footer-recognitions">Recognitions</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2">
-        <h5 class="footer-heading">Get Involved</h5>
+        <h5 class="footer-heading" data-i18n="footer-get-involved">Get Involved</h5>
         <ul class="footer-links">
-          <li><a href="#newsletter">Newsletter</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#newsletter" data-i18n="footer-newsletter">Newsletter</a></li>
+          <li><a href="#contact" data-i18n="footer-contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-lg-3">
-        <h5 class="footer-heading">Election Day</h5>
+        <h5 class="footer-heading" data-i18n="footer-election-day">Election Day</h5>
         <p class="footer-election-date">May 11, 2026</p>
-        <p class="footer-vote-info small">Make your voice heard — vote Manisha Varma in Lincoln, NB.</p>
-        <a href="#contact" class="btn btn-primary-red btn-sm mt-2">Contact Us</a>
+        <p class="footer-vote-info small" data-i18n="footer-vote-info">Make your voice heard — vote Manisha Varma in Lincoln, NB.</p>
+        <a href="#contact" class="btn btn-primary-red btn-sm mt-2" data-i18n="footer-contact-btn">Contact Us</a>
       </div>
     </div>
     <hr class="footer-divider" />
     <div class="row align-items-center">
       <div class="col-md-8 small text-muted">
-        &copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp;
-        Authorized by the official agent of Manisha Varma.
+        <span data-i18n="footer-copy">&copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp; Authorized by the official agent of Manisha Varma.</span>
       </div>
       <div class="col-md-4 text-md-end small text-muted mt-2 mt-md-0">
-        Lincoln, New Brunswick, Canada
+        <span data-i18n="footer-location">Lincoln, New Brunswick, Canada</span>
       </div>
     </div>
   </div>
@@ -559,6 +566,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <!-- GLightbox -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<!-- i18n (EN/FR) -->
+<script src="js/i18n.js"></script>
 <!-- Custom JS -->
 <script src="js/main.js"></script>
 </body>
