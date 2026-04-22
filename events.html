@@ -30,7 +30,7 @@
   <div class="container d-flex align-items-center justify-content-center gap-3">
     <span class="top-banner-label">
       <img src="images/maple-leaf.svg" alt="" />
-      Election Day · May 11, 2026
+      <span data-i18n="banner-label">Election Day · May 11, 2026</span>
     </span>
     <div class="top-banner-countdown">
       <span class="tbc-block"><span class="tbc-num" id="cd-days">00</span><span class="tbc-unit">d</span></span>
@@ -57,14 +57,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#platform">Platform</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#videos">Videos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="voting.html">Vote</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav-about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#platform" data-i18n="nav-platform">Platform</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery" data-i18n="nav-gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#videos" data-i18n="nav-videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="events.html" data-i18n="nav-events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="voting.html" data-i18n="nav-vote">Vote</a></li>
         <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary-red" href="index.html#contact">Contact Us</a>
+          <a class="btn btn-primary-red" href="index.html#contact" data-i18n="nav-contact">Contact Us</a>
+        </li>
+        <!-- Language switcher -->
+        <li class="nav-item ms-lg-2">
+          <div class="lang-switcher" role="group" aria-label="Language / Langue">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-divider" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
         </li>
       </ul>
     </div>
@@ -80,52 +88,52 @@
       <div class="col-lg-7">
         <div class="event-card">
           <div class="event-badge-label">
-            <i class="fa-solid fa-calendar-check me-2"></i>UPCOMING EVENT
+            <i class="fa-solid fa-calendar-check me-2"></i><span data-i18n="events-badge-label">UPCOMING EVENT</span>
           </div>
-          <h2 class="event-title">Meet &amp; Share Your Priorities</h2>
-          <p class="event-subtitle">A casual outdoor conversation — you set the agenda.</p>
+          <h2 class="event-title" data-i18n="events-title">Meet &amp; Share Your Priorities</h2>
+          <p class="event-subtitle" data-i18n="events-subtitle">A casual outdoor conversation — you set the agenda.</p>
 
           <div class="event-meta">
             <div class="event-meta-item">
               <i class="fa-solid fa-calendar-day"></i>
               <div>
-                <strong>Sunday, April 26, 2026</strong>
-                <span>4:00 PM – 6:00 PM (ADT)</span>
+                <strong data-i18n="events-date-label">Sunday, April 26, 2026</strong>
+                <span data-i18n="events-time">4:00 PM – 6:00 PM (ADT)</span>
               </div>
             </div>
             <div class="event-meta-item">
               <i class="fa-solid fa-location-dot"></i>
               <div>
-                <strong>Lincoln Heights Park – Open Green Area</strong>
-                <span>119 Goodine St, Fredericton, NB</span>
+                <strong data-i18n="events-venue-label">Lincoln Heights Park – Open Green Area</strong>
+                <span data-i18n="events-venue-addr">119 Goodine St, Fredericton, NB</span>
               </div>
             </div>
             <div class="event-meta-item">
               <i class="fa-solid fa-users"></i>
               <div>
-                <strong>Free &amp; Open to All</strong>
-                <span>Families welcome · Light refreshments provided</span>
+                <strong data-i18n="events-free-label">Free &amp; Open to All</strong>
+                <span data-i18n="events-free-sub">Families welcome · Light refreshments provided</span>
               </div>
             </div>
           </div>
 
           <hr class="my-4" />
 
-          <p>Fredericton's City Councillor election is coming up, and I'm running to represent you in Ward 7.</p>
-          <p><strong>Before you vote, let's talk.</strong></p>
-          <p>
+          <p data-i18n="events-body-1">Fredericton's City Councillor election is coming up, and I'm running to represent you in Ward 7.</p>
+          <p data-i18n="events-body-2"><strong>Before you vote, let's talk.</strong></p>
+          <p data-i18n="events-body-3">
             Join me at Lincoln Heights Park for <em>"Meet &amp; Share Your Priorities"</em> — a casual, outdoor event where <strong>you set the agenda</strong>. We've identified 5 key issues facing Ward 7. You'll see 5 boxes, one for each issue. Grab a sticker and "vote" for your top priority — then tell me why it matters to you.
           </p>
 
           <!-- 5 Issues -->
-          <h3 class="issues-heading mt-4 mb-3">The 5 Issues We're Tracking</h3>
+          <h3 class="issues-heading mt-4 mb-3" data-i18n="events-issues-heading">The 5 Issues We're Tracking</h3>
           <div class="row g-3">
             <div class="col-md-6">
               <div class="issue-card">
                 <div class="issue-number">1</div>
                 <div>
-                  <strong>Expand the Trail</strong>
-                  <p>Connecting neighbourhoods and keeping green space accessible.</p>
+                  <strong data-i18n="events-issue-1-title">Expand the Trail</strong>
+                  <p data-i18n="events-issue-1-body">Connecting neighbourhoods and keeping green space accessible.</p>
                 </div>
               </div>
             </div>
@@ -133,8 +141,8 @@
               <div class="issue-card">
                 <div class="issue-number">2</div>
                 <div>
-                  <strong>Property Taxes &amp; City Spending</strong>
-                  <p>Making sure tax hikes come with clear, accountable results.</p>
+                  <strong data-i18n="events-issue-2-title">Property Taxes &amp; City Spending</strong>
+                  <p data-i18n="events-issue-2-body">Making sure tax hikes come with clear, accountable results.</p>
                 </div>
               </div>
             </div>
@@ -142,8 +150,8 @@
               <div class="issue-card">
                 <div class="issue-number">3</div>
                 <div>
-                  <strong>Traffic Safety</strong>
-                  <p>Speeding, traffic lights, and safer crossings for kids and seniors.</p>
+                  <strong data-i18n="events-issue-3-title">Traffic Safety</strong>
+                  <p data-i18n="events-issue-3-body">Speeding, traffic lights, and safer crossings for kids and seniors.</p>
                 </div>
               </div>
             </div>
@@ -151,8 +159,8 @@
               <div class="issue-card">
                 <div class="issue-number">4</div>
                 <div>
-                  <strong>City Services</strong>
-                  <p>Roads, sidewalks, snow clearing, and downtown safety.</p>
+                  <strong data-i18n="events-issue-4-title">City Services</strong>
+                  <p data-i18n="events-issue-4-body">Roads, sidewalks, snow clearing, and downtown safety.</p>
                 </div>
               </div>
             </div>
@@ -160,8 +168,8 @@
               <div class="issue-card">
                 <div class="issue-number">5</div>
                 <div>
-                  <strong>Rehabilitation Centre &amp; Addiction Support</strong>
-                  <p>Access to treatment, mental health services, and community impact.</p>
+                  <strong data-i18n="events-issue-5-title">Rehabilitation Centre &amp; Addiction Support</strong>
+                  <p data-i18n="events-issue-5-body">Access to treatment, mental health services, and community impact.</p>
                 </div>
               </div>
             </div>
@@ -169,8 +177,8 @@
 
           <div class="event-note mt-4">
             <i class="fa-solid fa-quote-left fa-lg text-red me-2"></i>
-            No speeches. No politics as usual. Just real conversations, light refreshments, and your voice shaping my priorities. Bring the kids, bring a neighbour, bring your thoughts. This is about <strong>listening first.</strong>
-            <div class="mt-2 fw-semibold">— Manisha Varma, Your Ward 7 Candidate</div>
+            <span data-i18n="events-note">No speeches. No politics as usual. Just real conversations, light refreshments, and your voice shaping my priorities. Bring the kids, bring a neighbour, bring your thoughts. This is about <strong>listening first.</strong></span>
+            <div class="mt-2 fw-semibold" data-i18n="events-note-attr">— Manisha Varma, Your Ward 7 Candidate</div>
           </div>
         </div>
       </div>
@@ -179,7 +187,7 @@
       <div class="col-lg-5">
 
         <!-- Google Maps -->
-        <h3 class="section-title mb-3" style="font-size:1.4rem;">Location</h3>
+        <h3 class="section-title mb-3" style="font-size:1.4rem;" data-i18n="events-map-title">Location</h3>
         <div class="map-wrapper mb-2">
           <iframe
             src="https://maps.google.com/maps?q=119+Goodine+St,+Fredericton,+NB&output=embed"
@@ -190,13 +198,12 @@
         </div>
         <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x4ca421935bf6cc6f:0x46362ead7825232a"
            target="_blank" rel="noopener" class="btn btn-outline-red btn-sm mb-5">
-          <i class="fa-solid fa-map me-1"></i>Open in Google Maps
+          <i class="fa-solid fa-map me-1"></i><span data-i18n="events-map-btn">Open in Google Maps</span>
         </a>
 
         <!-- Can't make it? Contact form -->
-        <h3 class="section-title mb-1" style="font-size:1.4rem;">Can't Make It?</h3>
-        <p class="text-muted mb-3">Share your top issue or question — Manisha reads every message.</p>
-        <!-- Replace your@email.com with the campaign's real email address -->
+        <h3 class="section-title mb-1" style="font-size:1.4rem;" data-i18n="events-cant-title">Can't Make It?</h3>
+        <p class="text-muted mb-3" data-i18n="events-cant-sub">Share your top issue or question — Manisha reads every message.</p>
         <form action="https://formsubmit.co/vmanisha86@gmail.com" method="POST" class="form-card" id="eventContactForm">
           <input type="hidden" name="_subject" value="Ward 7 Event — Priority Message" />
           <input type="hidden" name="_captcha" value="false" />
@@ -204,33 +211,33 @@
 
           <div class="row g-3">
             <div class="col-12">
-              <label for="ec-name" class="form-label">Your Name <span class="text-danger">*</span></label>
+              <label for="ec-name" class="form-label"><span data-i18n="events-form-name">Your Name</span> <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="ec-name" name="name" required placeholder="Jane Smith" />
             </div>
             <div class="col-12">
-              <label for="ec-email" class="form-label">Email <span class="text-danger">*</span></label>
+              <label for="ec-email" class="form-label"><span data-i18n="events-form-email">Email</span> <span class="text-danger">*</span></label>
               <input type="email" class="form-control" id="ec-email" name="email" required placeholder="jane@example.com" />
             </div>
             <div class="col-12">
-              <label for="ec-issue" class="form-label">Your Top Issue</label>
+              <label for="ec-issue" class="form-label" data-i18n="events-form-issue">Your Top Issue</label>
               <select class="form-control" id="ec-issue" name="top_issue">
-                <option value="">— Select an issue —</option>
-                <option>Expand the Trail</option>
-                <option>Property Taxes &amp; City Spending</option>
-                <option>Traffic Safety</option>
-                <option>City Services</option>
-                <option>Rehabilitation Centre &amp; Addiction Support</option>
-                <option>Other</option>
+                <option value="" data-i18n="events-form-issue-ph">— Select an issue —</option>
+                <option data-i18n="events-form-issue-1">Expand the Trail</option>
+                <option data-i18n="events-form-issue-2">Property Taxes &amp; City Spending</option>
+                <option data-i18n="events-form-issue-3">Traffic Safety</option>
+                <option data-i18n="events-form-issue-4">City Services</option>
+                <option data-i18n="events-form-issue-5">Rehabilitation Centre &amp; Addiction Support</option>
+                <option data-i18n="events-form-issue-6">Other</option>
               </select>
             </div>
             <div class="col-12">
-              <label for="ec-message" class="form-label">Tell Me More <span class="text-danger">*</span></label>
+              <label for="ec-message" class="form-label"><span data-i18n="events-form-msg">Tell Me More</span> <span class="text-danger">*</span></label>
               <textarea class="form-control" id="ec-message" name="message" rows="4" required
-                placeholder="Why does this issue matter to you?"></textarea>
+                placeholder="Why does this issue matter to you?" data-i18n-ph="events-form-msg-ph"></textarea>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary-red w-100">
-                <i class="fa-solid fa-paper-plane me-2"></i>Send My Priority
+                <i class="fa-solid fa-paper-plane me-2"></i><span data-i18n="events-form-btn">Send My Priority</span>
               </button>
             </div>
           </div>
@@ -250,7 +257,7 @@
           <img src="images/maple-leaf.svg" alt="" class="footer-brand-icon" aria-hidden="true" />
           <span class="footer-brand-name">Manisha Varma</span>
         </div>
-        <p class="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
+        <p class="footer-tagline" data-i18n="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
         <div class="footer-social mt-3">
           <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter/X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
@@ -259,38 +266,37 @@
         </div>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1">
-        <h5 class="footer-heading">Quick Links</h5>
+        <h5 class="footer-heading" data-i18n="footer-quick-links">Quick Links</h5>
         <ul class="footer-links">
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#platform">Platform</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="voting.html">Voting Info</a></li>
-          <li><a href="index.html#recognitions">Recognitions</a></li>
+          <li><a href="index.html#about" data-i18n="footer-about">About</a></li>
+          <li><a href="index.html#platform" data-i18n="footer-platform">Platform</a></li>
+          <li><a href="index.html#gallery" data-i18n="footer-gallery">Gallery</a></li>
+          <li><a href="events.html" data-i18n="footer-events">Events</a></li>
+          <li><a href="voting.html" data-i18n="footer-voting">Voting Info</a></li>
+          <li><a href="index.html#recognitions" data-i18n="footer-recognitions">Recognitions</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2">
-        <h5 class="footer-heading">Get Involved</h5>
+        <h5 class="footer-heading" data-i18n="footer-get-involved">Get Involved</h5>
         <ul class="footer-links">
-          <li><a href="index.html#newsletter">Newsletter</a></li>
-          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="index.html#newsletter" data-i18n="footer-newsletter">Newsletter</a></li>
+          <li><a href="index.html#contact" data-i18n="footer-contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-lg-3">
-        <h5 class="footer-heading">Election Day</h5>
+        <h5 class="footer-heading" data-i18n="footer-election-day">Election Day</h5>
         <p class="footer-election-date">May 11, 2026</p>
-        <p class="footer-vote-info small">Make your voice heard — vote Manisha Varma in Ward 7.</p>
-        <a href="index.html#contact" class="btn btn-primary-red btn-sm mt-2">Contact Us</a>
+        <p class="footer-vote-info small" data-i18n="footer-vote-info-ward7">Make your voice heard — vote Manisha Varma in Ward 7.</p>
+        <a href="index.html#contact" class="btn btn-primary-red btn-sm mt-2" data-i18n="footer-contact-btn">Contact Us</a>
       </div>
     </div>
     <hr class="footer-divider" />
     <div class="row align-items-center">
       <div class="col-md-8 small text-muted">
-        &copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp;
-        Authorized by the official agent of Manisha Varma.
+        <span data-i18n="footer-copy">&copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp; Authorized by the official agent of Manisha Varma.</span>
       </div>
       <div class="col-md-4 text-md-end small text-muted mt-2 mt-md-0">
-        Lincoln, New Brunswick, Canada
+        <span data-i18n="footer-location">Lincoln, New Brunswick, Canada</span>
       </div>
     </div>
   </div>
@@ -301,6 +307,8 @@
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!-- i18n (EN/FR) -->
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
