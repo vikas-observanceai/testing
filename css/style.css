@@ -1002,28 +1002,29 @@ a:hover { color: var(--dark-red); }
 .lang-btn {
   background: none;
   border: none;
-  padding: 2px 7px;
+  padding: 3px 10px;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
   cursor: pointer;
   border-radius: 14px;
-  transition: background var(--transition), color var(--transition);
-  line-height: 1.6;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+  line-height: 1.7;
 }
-#mainNav.scrolled .lang-btn { color: var(--muted); }
+#mainNav.scrolled .lang-btn { color: rgba(51,51,68,0.45); }
 .lang-btn.active {
   background: var(--red);
   color: var(--white) !important;
+  box-shadow: 0 2px 8px rgba(255,0,0,0.45);
 }
 .lang-btn:hover:not(.active) {
   color: var(--white);
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.18);
 }
 #mainNav.scrolled .lang-btn:hover:not(.active) {
   color: var(--dark);
-  background: rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.10);
 }
 .lang-divider {
   color: rgba(255,255,255,0.25);
