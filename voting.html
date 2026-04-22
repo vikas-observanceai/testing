@@ -29,7 +29,7 @@
   <div class="container d-flex align-items-center justify-content-center gap-3">
     <span class="top-banner-label">
       <img src="images/maple-leaf.svg" alt="" />
-      Election Day · May 11, 2026
+      <span data-i18n="banner-label">Election Day · May 11, 2026</span>
     </span>
     <div class="top-banner-countdown">
       <span class="tbc-block"><span class="tbc-num" id="cd-days">00</span><span class="tbc-unit">d</span></span>
@@ -56,14 +56,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#platform">Platform</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#videos">Videos</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link active" href="voting.html">Vote</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav-about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#platform" data-i18n="nav-platform">Platform</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery" data-i18n="nav-gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#videos" data-i18n="nav-videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html" data-i18n="nav-events">Events</a></li>
+        <li class="nav-item"><a class="nav-link active" href="voting.html" data-i18n="nav-vote">Vote</a></li>
         <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary-red" href="index.html#contact">Contact Us</a>
+          <a class="btn btn-primary-red" href="index.html#contact" data-i18n="nav-contact">Contact Us</a>
+        </li>
+        <!-- Language switcher -->
+        <li class="nav-item ms-lg-2">
+          <div class="lang-switcher" role="group" aria-label="Language / Langue">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-divider" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
         </li>
       </ul>
     </div>
@@ -79,63 +87,63 @@
       <div class="col-lg-7">
         <div class="event-card">
           <div class="event-badge-label" style="background: #fff3cd; color: #856404; border-color: #ffc107;">
-            <i class="fa-solid fa-vote-yea me-2"></i>ELECTIONS NB · APRIL 20, 2026
+            <i class="fa-solid fa-vote-yea me-2"></i><span data-i18n="voting-badge-label">ELECTIONS NB · APRIL 20, 2026</span>
           </div>
-          <h2 class="event-title">Voting Starts Today!</h2>
-          <p class="event-subtitle">Early voting is open at all 18 municipal returning offices across Fredericton.</p>
+          <h2 class="event-title" data-i18n="voting-title">Voting Starts Today!</h2>
+          <p class="event-subtitle" data-i18n="voting-subtitle">Early voting is open at all 18 municipal returning offices across Fredericton.</p>
 
           <div class="event-meta">
             <div class="event-meta-item">
               <i class="fa-solid fa-building-columns"></i>
               <div>
-                <strong>18 Municipal Returning Offices</strong>
-                <span>Open now for early in-person voting</span>
+                <strong data-i18n="voting-offices-label">18 Municipal Returning Offices</strong>
+                <span data-i18n="voting-offices-sub">Open now for early in-person voting</span>
               </div>
             </div>
             <div class="event-meta-item">
               <i class="fa-solid fa-envelope-open-text"></i>
               <div>
-                <strong>Vote by Mail Available</strong>
-                <span>Apply online or at your returning office · Must be returned by 8 p.m. on election day</span>
+                <strong data-i18n="voting-mail-label">Vote by Mail Available</strong>
+                <span data-i18n="voting-mail-sub">Apply online or at your returning office · Must be returned by 8 p.m. on election day</span>
               </div>
             </div>
             <div class="event-meta-item">
               <i class="fa-solid fa-universal-access"></i>
               <div>
-                <strong>Accessible Voting</strong>
-                <span>Braille controller, sip &amp; puff systems, and audio session paddles available at all offices</span>
+                <strong data-i18n="voting-access-label">Accessible Voting</strong>
+                <span data-i18n="voting-access-sub">Braille controller, sip &amp; puff systems, and audio session paddles available at all offices</span>
               </div>
             </div>
           </div>
 
           <hr class="my-4" />
 
-          <p>
+          <p data-i18n="voting-body-1">
             People who wish to cast ballots for the May 11 local government, rural district and district education council elections can do so at any of the 18 municipal returning offices now open for these elections.
           </p>
-          <p>
+          <p data-i18n="voting-body-2">
             "This voting option offers greater flexibility to voters who might not otherwise be able to cast their vote during the scheduled voting times," said Kim Poffenroth, municipal electoral officer. "Electors who are away from their normal voting place can also go to any returning office to request a ballot for the place where they are eligible to vote."
           </p>
-          <p>
+          <p data-i18n="voting-body-3">
             Poffenroth noted that, with printed ballots now available, the municipal returning offices will start processing the requests received for mail-in ballots. Electors can continue to apply for a vote-by-mail package either by using the online portal on the Elections NB website, or by downloading an application and submitting it to their local returning office.
           </p>
-          <p class="text-muted small"><strong>Note:</strong> All mail-in ballots must be returned to the returning office from where they were issued before 8 p.m. on election day.</p>
+          <p class="text-muted small" data-i18n="voting-note"><strong>Note:</strong> All mail-in ballots must be returned to the returning office from where they were issued before 8 p.m. on election day.</p>
 
           <hr class="my-4" />
 
           <!-- Advance Polling -->
           <h3 class="issues-heading mb-3">
-            <i class="fa-solid fa-calendar-check me-2 text-red"></i>Advance Polling Station
+            <i class="fa-solid fa-calendar-check me-2 text-red"></i><span data-i18n="voting-advance-heading">Advance Polling Station</span>
           </h3>
-          <p class="mb-3">You can vote between <strong>10:00 a.m. and 8:00 p.m.</strong> on either advance polling day:</p>
+          <p class="mb-3" data-i18n="voting-advance-intro">You can vote between <strong>10:00 a.m. and 8:00 p.m.</strong> on either advance polling day:</p>
 
           <div class="row g-3 mb-4">
             <div class="col-md-6">
               <div class="issue-card">
                 <div class="issue-number">1</div>
                 <div>
-                  <strong>Saturday, May 2, 2026</strong>
-                  <p>10:00 a.m. – 8:00 p.m.</p>
+                  <strong data-i18n="voting-date-1">Saturday, May 2, 2026</strong>
+                  <p data-i18n="voting-time-1">10:00 a.m. – 8:00 p.m.</p>
                 </div>
               </div>
             </div>
@@ -143,8 +151,8 @@
               <div class="issue-card">
                 <div class="issue-number">2</div>
                 <div>
-                  <strong>Monday, May 4, 2026</strong>
-                  <p>10:00 a.m. – 8:00 p.m.</p>
+                  <strong data-i18n="voting-date-2">Monday, May 4, 2026</strong>
+                  <p data-i18n="voting-time-2">10:00 a.m. – 8:00 p.m.</p>
                 </div>
               </div>
             </div>
@@ -154,23 +162,23 @@
             <div class="event-meta-item">
               <i class="fa-solid fa-location-dot"></i>
               <div>
-                <strong>Paroisse Ste-Anne-des-Pays-Bas</strong>
-                <span>655 rue Priestman St, Fredericton, NB</span>
+                <strong data-i18n="voting-venue-label">Paroisse Ste-Anne-des-Pays-Bas</strong>
+                <span data-i18n="voting-venue-addr">655 rue Priestman St, Fredericton, NB</span>
               </div>
             </div>
           </div>
 
           <div class="event-note mt-4">
             <i class="fa-solid fa-check-circle fa-lg text-red me-2"></i>
-            Every vote counts. Whether you vote early, by mail, or on Election Day — <strong>May 11, 2026</strong> — your voice shapes Ward 7's future. Vote Manisha Varma for a Dedicated · Inclusive · Trusted councillor.
+            <span data-i18n="voting-callout">Every vote counts. Whether you vote early, by mail, or on Election Day — <strong>May 11, 2026</strong> — your voice shapes Ward 7's future. Vote Manisha Varma for a Dedicated · Inclusive · Trusted councillor.</span>
           </div>
         </div>
       </div>
 
-      <!-- Right: Map -->
+      <!-- Right: Map + Election Day reminder -->
       <div class="col-lg-5">
-        <h3 class="section-title mb-3" style="font-size:1.4rem;">Advance Polling Location</h3>
-        <p class="text-muted mb-3">Paroisse Ste-Anne-des-Pays-Bas<br/>655 rue Priestman St, Fredericton, NB</p>
+        <h3 class="section-title mb-3" style="font-size:1.4rem;" data-i18n="voting-map-title">Advance Polling Location</h3>
+        <p class="text-muted mb-3" data-i18n="voting-map-sub">Paroisse Ste-Anne-des-Pays-Bas<br/>655 rue Priestman St, Fredericton, NB</p>
         <div class="map-wrapper mb-2">
           <iframe
             src="https://maps.google.com/maps?q=655+Priestman+St,+Fredericton,+NB&output=embed"
@@ -181,27 +189,27 @@
         </div>
         <a href="https://maps.google.com/maps?q=655+Priestman+St,+Fredericton,+NB"
            target="_blank" rel="noopener" class="btn btn-outline-red btn-sm mb-5">
-          <i class="fa-solid fa-map me-1"></i>Open in Google Maps
+          <i class="fa-solid fa-map me-1"></i><span data-i18n="voting-map-btn">Open in Google Maps</span>
         </a>
 
         <!-- Election Day reminder card -->
         <div class="event-card mt-2" style="background: #fff8f8;">
           <h4 class="fw-bold mb-3" style="color: var(--red);">
-            <i class="fa-solid fa-flag-checkered me-2"></i>Election Day
+            <i class="fa-solid fa-flag-checkered me-2"></i><span data-i18n="voting-eday-title">Election Day</span>
           </h4>
           <div class="event-meta mb-0">
             <div class="event-meta-item">
               <i class="fa-solid fa-calendar-day"></i>
               <div>
-                <strong>Monday, May 11, 2026</strong>
-                <span>Regular polling stations open</span>
+                <strong data-i18n="voting-eday-date">Monday, May 11, 2026</strong>
+                <span data-i18n="voting-eday-sub">Regular polling stations open</span>
               </div>
             </div>
             <div class="event-meta-item">
               <i class="fa-solid fa-info-circle"></i>
               <div>
-                <strong>Not sure where to vote?</strong>
-                <span>Visit <a href="https://www.electionsnb.ca" target="_blank" rel="noopener">electionsnb.ca</a> to find your polling station</span>
+                <strong data-i18n="voting-eday-find">Not sure where to vote?</strong>
+                <span data-i18n="voting-eday-find-sub">Visit <a href="https://www.electionsnb.ca" target="_blank" rel="noopener">electionsnb.ca</a> to find your polling station</span>
               </div>
             </div>
           </div>
@@ -221,7 +229,7 @@
           <img src="images/maple-leaf.svg" alt="" class="footer-brand-icon" aria-hidden="true" />
           <span class="footer-brand-name">Manisha Varma</span>
         </div>
-        <p class="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
+        <p class="footer-tagline" data-i18n="footer-tagline">Dedicated · Inclusive · Trusted<br/>Ward 7 – Southwood Park &amp; Lincoln · May 11, 2026</p>
         <div class="footer-social mt-3">
           <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter/X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
@@ -230,38 +238,37 @@
         </div>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1">
-        <h5 class="footer-heading">Quick Links</h5>
+        <h5 class="footer-heading" data-i18n="footer-quick-links">Quick Links</h5>
         <ul class="footer-links">
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#platform">Platform</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="voting.html">Voting Info</a></li>
-          <li><a href="index.html#recognitions">Recognitions</a></li>
+          <li><a href="index.html#about" data-i18n="footer-about">About</a></li>
+          <li><a href="index.html#platform" data-i18n="footer-platform">Platform</a></li>
+          <li><a href="index.html#gallery" data-i18n="footer-gallery">Gallery</a></li>
+          <li><a href="events.html" data-i18n="footer-events">Events</a></li>
+          <li><a href="voting.html" data-i18n="footer-voting">Voting Info</a></li>
+          <li><a href="index.html#recognitions" data-i18n="footer-recognitions">Recognitions</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2">
-        <h5 class="footer-heading">Get Involved</h5>
+        <h5 class="footer-heading" data-i18n="footer-get-involved">Get Involved</h5>
         <ul class="footer-links">
-          <li><a href="index.html#newsletter">Newsletter</a></li>
-          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="index.html#newsletter" data-i18n="footer-newsletter">Newsletter</a></li>
+          <li><a href="index.html#contact" data-i18n="footer-contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-lg-3">
-        <h5 class="footer-heading">Election Day</h5>
+        <h5 class="footer-heading" data-i18n="footer-election-day">Election Day</h5>
         <p class="footer-election-date">May 11, 2026</p>
-        <p class="footer-vote-info small">Make your voice heard — vote Manisha Varma in Ward 7.</p>
-        <a href="index.html#contact" class="btn btn-primary-red btn-sm mt-2">Contact Us</a>
+        <p class="footer-vote-info small" data-i18n="footer-vote-info-ward7">Make your voice heard — vote Manisha Varma in Ward 7.</p>
+        <a href="index.html#contact" class="btn btn-primary-red btn-sm mt-2" data-i18n="footer-contact-btn">Contact Us</a>
       </div>
     </div>
     <hr class="footer-divider" />
     <div class="row align-items-center">
       <div class="col-md-8 small text-muted">
-        &copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp;
-        Authorized by the official agent of Manisha Varma.
+        <span data-i18n="footer-copy">&copy; 2026 Manisha Varma Campaign. All rights reserved. &nbsp;|&nbsp; Authorized by the official agent of Manisha Varma.</span>
       </div>
       <div class="col-md-4 text-md-end small text-muted mt-2 mt-md-0">
-        Lincoln, New Brunswick, Canada
+        <span data-i18n="footer-location">Lincoln, New Brunswick, Canada</span>
       </div>
     </div>
   </div>
@@ -272,6 +279,8 @@
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!-- i18n (EN/FR) -->
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
