@@ -989,15 +989,15 @@ a:hover { color: var(--dark-red); }
   display: inline-flex;
   align-items: center;
   gap: 0;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.30);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
   border-radius: 20px;
   padding: 3px 6px;
   transition: background var(--transition), border-color var(--transition);
 }
 #mainNav.scrolled .lang-switcher {
-  background: rgba(0,0,0,0.06);
-  border-color: rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.07);
+  border-color: rgba(0,0,0,0.22);
 }
 .lang-btn {
   background: none;
@@ -1006,13 +1006,13 @@ a:hover { color: var(--dark-red); }
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
   cursor: pointer;
   border-radius: 14px;
   transition: background var(--transition), color var(--transition), box-shadow var(--transition);
   line-height: 1.7;
 }
-#mainNav.scrolled .lang-btn { color: rgba(51,51,68,0.45); }
+#mainNav.scrolled .lang-btn { color: var(--muted); }
 .lang-btn.active {
   background: var(--red);
   color: var(--white) !important;
@@ -1020,28 +1020,16 @@ a:hover { color: var(--dark-red); }
 }
 .lang-btn:hover:not(.active) {
   color: var(--white);
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.20);
 }
 #mainNav.scrolled .lang-btn:hover:not(.active) {
   color: var(--dark);
-  background: rgba(0,0,0,0.10);
+  background: rgba(0,0,0,0.08);
 }
 .lang-divider {
-  color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.28);
   font-size: 0.7rem;
   user-select: none;
   line-height: 1;
 }
-#mainNav.scrolled .lang-divider { color: rgba(0,0,0,0.18); }
-
-@media (max-width: 991px) {
-  .lang-switcher {
-    background: rgba(255,255,255,0.12);
-    border-color: rgba(255,255,255,0.25);
-    margin: 0.5rem 0;
-  }
-  #mainNav.scrolled .lang-switcher {
-    background: rgba(0,0,0,0.06);
-    border-color: rgba(0,0,0,0.15);
-  }
-}
+#mainNav.scrolled .lang-divider { color: rgba(0,0,0,0.22); }
