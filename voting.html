@@ -44,12 +44,18 @@
 </div>
 
 <!-- ===================== NAVBAR ===================== -->
-<nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav" data-always-scrolled aria-label="Main navigation">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
       <img src="images/maple-leaf.svg" alt="" class="brand-icon" aria-hidden="true" />
       <span class="brand-name">Manisha Varma</span>
     </a>
+    <!-- Mobile lang switcher — always visible, outside collapse -->
+    <div class="lang-switcher d-lg-none ms-auto me-2" role="group" aria-label="Language / Langue">
+      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <span class="lang-divider" aria-hidden="true">|</span>
+      <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -65,9 +71,9 @@
         <li class="nav-item ms-lg-2">
           <a class="btn btn-primary-red" href="index.html#contact" data-i18n="nav-contact">Contact Us</a>
         </li>
-        <!-- Language switcher -->
+        <!-- Desktop lang switcher — inside collapse -->
         <li class="nav-item ms-lg-2">
-          <div class="lang-switcher" role="group" aria-label="Language / Langue">
+          <div class="lang-switcher d-none d-lg-flex" role="group" aria-label="Language / Langue">
             <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
             <span class="lang-divider" aria-hidden="true">|</span>
             <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
