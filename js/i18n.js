@@ -74,6 +74,15 @@
       'recog-3-title':          'Guest at Government House',
       'recog-3-org':            'Province of New Brunswick',
       'recog-3-quote':          'Invited to Government House, Fredericton, in recognition of her contributions to the cultural and civic life of New Brunswick.',
+      /* Resources */
+      'nav-resources':          'Resources',
+      'resources-eyebrow':      'Community Downloads',
+      'resources-title':        'Resources',
+      'resources-subtitle':     'Helpful documents and guides for our community.',
+      'resources-watch-title':  'Community Watch Guide',
+      'resources-watch-desc':   'Learn how to keep our neighbourhood safe. This information package covers community watch best practices and how to get involved.',
+      'resources-watch-btn':    'Download PDF',
+      'footer-resources':       'Resources',
       /* Newsletter */
       'newsletter-title':       'Stay in the Loop',
       'newsletter-sub':         'Get campaign updates, event invites, and news delivered to your inbox.',
@@ -257,6 +266,15 @@
       'recog-3-title':          'Invitée à la maison du gouvernement',
       'recog-3-org':            'Province du Nouveau-Brunswick',
       'recog-3-quote':          'Invitée à la maison du gouvernement de Fredericton en reconnaissance de ses contributions à la vie culturelle et civique du Nouveau-Brunswick.',
+      /* Resources */
+      'nav-resources':          'Ressources',
+      'resources-eyebrow':      'Téléchargements communautaires',
+      'resources-title':        'Ressources',
+      'resources-subtitle':     'Documents et guides utiles pour notre communauté.',
+      'resources-watch-title':  'Guide de surveillance communautaire',
+      'resources-watch-desc':   'Apprenez comment assurer la sécurité de notre quartier. Ce dossier d\'information couvre les meilleures pratiques de surveillance communautaire et comment s\'impliquer.',
+      'resources-watch-btn':    'Télécharger le PDF',
+      'footer-resources':       'Ressources',
       /* Newsletter */
       'newsletter-title':       'Restez informée',
       'newsletter-sub':         'Recevez les mises à jour de la campagne, les invitations aux événements et les nouvelles dans votre boîte de réception.',
