@@ -91,6 +91,39 @@
     }, { passive: true });
   }
 
+  /* ---- Gallery "View More / View Less" toggle ---- */
+  var viewMoreBtn   = document.getElementById('galleryViewMore');
+  var viewMoreLabel = document.getElementById('galleryViewMoreLabel');
+  var viewMoreWrap  = document.getElementById('galleryViewMoreWrap');
+  var extraItems    = document.querySelectorAll('.gallery-extra');
+
+  if (viewMoreBtn) {
+    // Hide button if there are no extra items
+    if (extraItems.length === 0) {
+      viewMoreWrap.style.display = 'none';
+    }
+
+    viewMoreBtn.addEventListener('click', function () {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      extraItems.forEach(function (el) {
+        el.classList.toggle('show', !expanded);
+      });
+      this.setAttribute('aria-expanded', String(!expanded));
+      this.classList.toggle('active', !expanded);
+      viewMoreLabel.textContent = expanded ? 'View More' : 'View Less';
+
+      // Re-init lightbox so new items are included
+      if (!expanded && typeof GLightbox !== 'undefined') {
+        GLightbox({
+          selector: '.glightbox',
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: false,
+        });
+      }
+    });
+  }
+
   /* ---- GLightbox gallery ---- */
   if (typeof GLightbox !== 'undefined') {
     GLightbox({

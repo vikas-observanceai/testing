@@ -474,6 +474,33 @@ a:hover { color: var(--dark-red); }
 }
 .gallery-thumb:hover .gallery-overlay { opacity: 1; }
 
+/* ---- Gallery extra items (hidden until View More) ---- */
+.gallery-extra { display: none; }
+.gallery-extra.show { display: block; }
+
+/* ---- View More button ---- */
+.btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 2rem;
+  padding: 0.65rem 1.8rem;
+  border: 2px solid var(--red);
+  border-radius: 50px;
+  color: var(--red);
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.btn-view-more:hover, .btn-view-more.active {
+  background: var(--red);
+  color: var(--white);
+}
+.btn-view-more i { transition: transform 0.3s ease; }
+.btn-view-more.active i { transform: rotate(180deg); }
+
 /* ---- Videos ---- */
 .video-card {
   background: rgba(255,255,255,0.08);
